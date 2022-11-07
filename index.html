@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">SCHEDULE</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#contact" class="w3-button w3-block w3-black">CONTACT</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Free delivery from 5pm to 1am</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">wit.Buds<br></span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white"></span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">SCHEDULE</span></h5>
+    <p>Bi-Weekly reupps from caregivers and growers, mostly in southern maine.</p>
+    <p>Current menu is live and updated when needed.</p>
+    
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Sorry for my bluntness, thats just how I roll."</i></p>
+      <p>Smoker, Scholar and Owner: Ben Dover</p>
+    </div>
+    <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Delivery hours:</strong> Free delivery from 5pm to 1am.</p>
+    <p><strong>Address:</strong> You tell me.</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Bud</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Concentrate</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>#1: Strain Name</h5>
+      <p class="w3-text-grey">
+3.5g&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;7g&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;14g&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;28g </p>
+      <p class="w3-text-grey"> $30.00&nbsp;&nbsp;/&nbsp;&nbsp;$57.50&nbsp;&nbsp;/&nbsp;&nbsp;$115.0&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;$210.0 </p><br>
+    
+      <h5>#2: Strain Name</h5>
+      <p class="w3-text-grey">
+3.5g&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;7g&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;14g&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;28g </p>
+      <p class="w3-text-grey"> $25.00&nbsp;&nbsp;/&nbsp;&nbsp;$45.00&nbsp;&nbsp;/&nbsp;&nbsp;$85.00&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;$170.00 </p><br>
+    
+      <h5>#3: Strain Name</h5>
+      <p class="w3-text-grey">3.5g&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;7g&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;14g&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;28g </p>
+      <p class="w3-text-grey"> $20.00&nbsp;&nbsp;/&nbsp;&nbsp;$40.00&nbsp;&nbsp;/&nbsp;&nbsp;$75.00&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;$140.00 </p><br>
+    
+      <h5>#4: Strain Name</h5>
+      <p class="w3-text-grey"> 3.5g&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;7g&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;14g&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;28g </p>
+      <p class="w3-text-grey"> $18.75&nbsp;&nbsp;/&nbsp;&nbsp;$36.50&nbsp;&nbsp;/&nbsp;&nbsp;$70.00&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;$130.00 </p><br>
+    
+      <h5>#5: Strain Name </h5>
+      <p class="w3-text-grey"> 3.5g&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;7g&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;14g&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;28g </p>
+      <p class="w3-text-grey"> $12.50&nbsp;&nbsp;/&nbsp;&nbsp;$25.00&nbsp;&nbsp;/&nbsp;&nbsp;$50.00&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;$100.00 </p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>1</h5>
+      <p class="w3-text-grey">NA</p><br>
+    
+      <h5>2</h5>
+      <p class="w3-text-grey">NA</p><br>
+    
+      <h5>3</h5>
+      <p class="w3-text-grey">NA</p><br>
+    
+      <h5>4</h5>
+      <p class="w3-text-grey">NA</p><br>
+    
+      <h5>5</h5>
+      <p class="w3-text-grey">NA</p>
+    </div>  
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<br>
+<br>
+<div id="contact">
+        <h2>Get in Touch &nbsp;/&nbsp; Schedule a Delivery</h2>
+        <div id="contact-form">
+                <form action="https://formspree.io/mpzyqdng" method="POST">
+                <input class="w3-input w3-padding-16 w3-border" type="hidden" name="_subject" value="Contact request from personal website" />
+                <input class="w3-input w3-padding-16 w3-border" type="email" name="_replyto" placeholder="Your email" required>
+                <textarea class="w3-input w3-padding-16 w3-border" name="message" placeholder="Drop your snap or # and I'll reach out. The earlier the notice the easier to coordinate with you. " required></textarea>
+                <button class="w3-input w3-padding-16 w3-border" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://nida.nih.gov/sites/default/files/2020-02/marijuana-plant-grown-in-greenhouse.jpg" title="W3.CSS" target="_blank" class="w3-hover-text-green">Green</a></p>
+<p> I ripped this off w3.schools templates</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
